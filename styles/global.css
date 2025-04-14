@@ -9,6 +9,11 @@
   src: url(../assets/fonts/Nunito-Sans.ttf);
 }
 
+@font-face {
+  font-family: "Nunito";
+  src: url(../assets/fonts/Nunito.ttf);
+}
+
 body{
   font-family: "Nunito-sans";
 }
@@ -31,8 +36,20 @@ input {
   outline: none;
 }
 
+li{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+}
+
 .center {
+  position: relative;
   width: 1280px;
   max-width: 100%;
   margin: 0 auto;
+}
+
+.launch{
+  margin-top:125px;
 }
