@@ -241,6 +241,10 @@ header span:not(.nav-menu ul span) {
 
 /* slider header */
 
+.launch {
+  margin-top: 0;
+}
+
 .launch-header {
   display: flex;
   align-items: center;
@@ -248,16 +252,18 @@ header span:not(.nav-menu ul span) {
   margin-bottom: 20px;
 }
 
-/* mug section */
+/* mug section 1 e 2 */
 
-.mug-section {
+.mug-section,
+.mug2-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 1220px;
-  margin: 125px auto 0 auto;
+  margin: 0 auto 0 auto;
   gap: 35px;
   font-family: "Nunito";
+  padding: 30px 0;
 }
 
 .mug-section img {
@@ -270,7 +276,7 @@ header span:not(.nav-menu ul span) {
 }
 
 .mug-text p {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   margin-bottom: 20px;
   letter-spacing: 1px;
 }
@@ -278,4 +284,132 @@ header span:not(.nav-menu ul span) {
 .mug-text h2 {
   font-size: 2rem;
   margin-bottom: 20px;
+}
+
+.mug-section-2 {
+  width: 100%;
+  background-color: #dedede;
+}
+
+.mug-2 {
+  width: 50%;
+}
+
+.mug2-text {
+  position: relative;
+  color: #4f4f4f;
+}
+
+.mug2-text h2 {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.mug2-text p {
+  width: 40ch;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 45px;
+  letter-spacing: 1px;
+}
+
+.mug2-text p span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 230px;
+  height: auto;
+  background-color: #005cff;
+  padding: 15px;
+  border-radius: 50%;
+}
+
+/* CTA */
+
+.CTA {
+  position: relative;
+  width: 100%;
+  height: 700px;
+  background-image: url(../assets/images/banner-cta.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.cta-message {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  font-size: 1.5rem;
+  color: #ffffff;
+  background-color: #005cff;
+  padding: 45px 5px;
+}
+
+/* Newsletter */
+
+.newsletter{
+  position: relative;
+  text-align: center;
+}
+
+.newsletter span{
+  color: #005cff;
+}
+
+.form-newsletter {
+  width: 1340px;
+  max-width: 100%;
+  background-color: #dedfdf;
+  margin: 0 auto;
+  padding: 60px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+
+}
+
+.form-newsletter form {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  font-family: "Nunito-sans";
+}
+
+.form-newsletter form input[type="text"],
+.form-newsletter form input[type="email"] {
+  width: 250px;
+  padding: 15px 10px;
+  border-radius: 8px;
+}
+
+.form-newsletter form input[type="checkbox"] {
+  border: none;
+  width: 15px;
+  height: 15px;
+}
+
+.check-uptdates {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 5px;
+}
+
+.form-newsletter form button {
+  width: 130px;
+  max-width: 100%;
+  background-color: #005cff;
+  padding: 18px 5px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #ffffff;
 }
