@@ -94,6 +94,7 @@ header span:not(.nav-menu ul span) {
   text-align: center;
   font-weight: bold;
   gap: 35px;
+  margin-bottom: 100px;
 }
 
 .banner img {
@@ -242,7 +243,8 @@ header span:not(.nav-menu ul span) {
 /* slider header */
 
 .launch {
-  margin-top: 0;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .launch-header {
@@ -264,6 +266,10 @@ header span:not(.nav-menu ul span) {
   gap: 35px;
   font-family: "Nunito";
   padding: 30px 0;
+}
+
+.mug-section-2 {
+  margin: 25px 0;
 }
 
 .mug-section img {
@@ -336,6 +342,7 @@ header span:not(.nav-menu ul span) {
   background-image: url(../assets/images/banner-cta.jpg);
   background-size: cover;
   background-position: center;
+  margin: 15px 0 75px 0;
 }
 
 .cta-message {
@@ -352,12 +359,17 @@ header span:not(.nav-menu ul span) {
 
 /* Newsletter */
 
-.newsletter{
+.newsletter {
   position: relative;
   text-align: center;
+  margin-bottom: 45px;
 }
 
-.newsletter span{
+.newsletter h3 {
+  margin-bottom: 35px;
+}
+
+.newsletter span {
   color: #005cff;
 }
 
@@ -371,7 +383,6 @@ header span:not(.nav-menu ul span) {
   align-items: center;
   justify-content: center;
   border-radius: 8px;
-
 }
 
 .form-newsletter form {
@@ -412,4 +423,110 @@ header span:not(.nav-menu ul span) {
   border-radius: 8px;
   font-size: 1rem;
   color: #ffffff;
+}
+
+/* Footer */
+
+.footer {
+  position: relative;
+  width: 100%;
+  font-family: "Nunito-sans";
+}
+
+.fast-links {
+  width: 100%;
+  background-color: #f5f5f5;
+  height: max-content;
+  padding: 45px 0 0 0;
+}
+
+.wrapper-fast-links {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  place-content: start center;
+  padding: 0 10px;
+}
+
+.avanti-logo-footer .avanti-logo {
+  width: 150px;
+  height: auto;
+}
+
+.social {
+  display: flex;
+  gap: 35px;
+  margin-top: 20px;
+}
+
+.social img {
+  width: 21px;
+  height: auto;
+}
+
+.social img:nth-child(2) {
+  width: 10px;
+}
+
+.links h4 {
+  margin-bottom: 18px;
+}
+
+.links h5 {
+  margin: 10px 0;
+  font-size: 1rem;
+}
+
+.links h5 a {
+  color: #303030;
+  font-weight: 400;
+}
+
+.links h5 span {
+  font-weight: bold;
+}
+
+.payments-form,
+.partners {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 35px;
+  margin-top: 55px;
+}
+
+.payments-form {
+  padding-bottom: 60px;
+}
+
+.payments-form img {
+  width: 30px;
+  height: 30px;
+}
+
+.partners img {
+  width: 50px;
+  height: auto;
+}
+
+.final-message {
+  text-align: center;
+  background-color: #ffffff;
+  padding: 55px 0;
+}
+
+.final-message p {
+  max-width: 150ch;
+  margin: 0 auto;
+  color: #303030;
+}
+
+.partner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+}
+
+.partner-2 img {
+  width: 40px;
 }
