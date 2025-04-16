@@ -436,8 +436,12 @@ ul .all-categories-link:hover .all-categories {
 
 /* swipper */
 .swiper {
-  height: 470px;
   position: relative;
+}
+
+.swiper-pagination {
+  position: relative !important;
+  margin-top: 25px;
 }
 
 .slide-controller {
@@ -559,6 +563,7 @@ ul .all-categories-link:hover .all-categories {
 .launch {
   margin-top: 50px;
   margin-bottom: 50px;
+  padding: 0 35px;
 }
 
 .launch-header {
@@ -566,6 +571,8 @@ ul .all-categories-link:hover .all-categories {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 /* mug section 1 e 2 */

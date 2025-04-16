@@ -1,7 +1,7 @@
 const swiper = new Swiper(".swiper", {
   direction: "horizontal",
   loop: true,
-  slidesPerView: 5,
+  slidesPerView: 1,
   spaceBetween: 15,
 
   pagination: {
@@ -15,6 +15,14 @@ const swiper = new Swiper(".swiper", {
 
   scrollbar: {
     el: ".swiper-scrollbar",
+  },
+  breakpoints: {
+    1140: {
+      slidesPerView: 5,
+    },
+    750: {
+      slidesPerView: 3,
+    },
   },
 });
 
