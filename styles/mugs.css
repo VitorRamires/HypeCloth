@@ -1,0 +1,133 @@
+
+
+/* mug section 1 e 2 */
+
+.mug-section,
+.mug2-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1220px;
+  max-width: 100%;
+  margin: 0 auto 0 auto;
+  gap: 35px;
+  font-family: "Nunito";
+  padding: 30px;
+  flex-wrap: wrap;
+}
+
+.mug-section-2 {
+  margin: 25px 0;
+}
+
+.mug-section img {
+  background-color: #c2c2c2;
+  width: 650px;
+}
+
+.mug-text {
+  width: 40%;
+}
+
+.mug-text p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+.mug-text h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.mug-section-2 {
+  width: 100%;
+  background-color: #dedede;
+}
+
+.mug-2 {
+  width: 50%;
+}
+
+.mug2-text {
+  position: relative;
+  color: #4f4f4f;
+}
+
+.mug2-text h2 {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.mug2-text p {
+  width: 40ch;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 45px;
+  letter-spacing: 1px;
+}
+
+.mug2-text p span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 230px;
+  height: auto;
+  background-color: #005cff;
+  padding: 15px;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 1218px) {
+  .mug-text {
+    width: 100%;
+    text-align: center;
+  }
+
+  .mug-section img {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .mug2-text {
+    width: 100%;
+  }
+
+  .mug2-text p {
+    width: 100%;
+  }
+
+  .mug2-text p span {
+    width: 110px;
+  }
+
+  .mug-2 {
+    width: 450px;
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .mug2-text p {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .mug2-text p span {
+    width: 70px;
+  }
+
+  .mug-text p {
+    font-size: 0.9rem;
+  }
+
+  .mug-text h2 {
+    font-size: 1.7rem;
+  }
+}

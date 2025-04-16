@@ -1,2 +1,7 @@
-@import url(./global.css);
-@import url(./page.css);
+@import url(global.css);
+@import url(swiper.css);
+@import url(footer.css);
+@import url(banner.css);
+@import url(header.css);
+@import url(mugs.css);
+@import url(newsletter.css);
