@@ -5,97 +5,138 @@
   width: 100%;
   height: 550px;
   background-color: #e8e8ea;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   color: #005cff;
   text-align: center;
   font-weight: bold;
-  gap: 35px;
   margin-bottom: 100px;
-  flex-wrap: wrap;
   padding: 0 50px;
   overflow: hidden;
+  place-items: center;
 }
 
-.banner img {
-  width: 740px;
-  height: 100%;
+.banner-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 35px;
 }
 
-.banner h1 {
-  font-size: 7rem;
-  color: #000000;
+.chair-banner img {
+  height: 700px;
+  width: auto;
 }
 
-.banner h1 span {
-  font-weight: 300;
+.mob-text-banner {
+  display: none;
+  margin-bottom: 50px;
 }
 
-.banner p {
-  font-size: 2rem;
-  letter-spacing: 6px;
-  margin: 10px 0;
+.desk-text-banner {
+  display: block;
+  margin-bottom: 70px;
 }
 
-.banner h3 {
-  font-size: 4.4rem;
-}
-
-@media screen and (max-width: 1560px) {
-  .banner h1 {
-    font-size: 5rem;
+@media screen and (max-width: 1000px) {
+  .banner {
+    padding: 0;
   }
 
-  .banner p {
-    font-size: 1.5rem;
+  .desk-text-banner {
+    width: 300px;
   }
 
-  .banner h3 {
-    font-size: 3rem;
+  .chair-banner img {
+    height: 600px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .mob-text-banner {
+    display: block;
+    width: 350px;
+  }
+
+  .desk-text-banner {
+    display: none;
+  }
+
+  .banner-wrapper {
+    gap: 0;
+  }
+
+  .banner-wrapper {
+    right: 20%;
+  }
+
+  .text-banner {
+    position: relative;
+    left: 4%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .mob-text-banner {
+    display: block;
+    width: 250px;
+  }
+
+  .chair-banner img {
+    height: 400px;
   }
 
   .banner {
-    gap: 25px;
+    height: 350px;
   }
-}
 
-@media screen and (max-width: 1413px) {
+  .banner-wrapper {
+    right: 25%;
+  }
+
   .text-banner {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 3;
-    width: 100%;
-  }
-
-  .overlay {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.5);
-    z-index: 2;
-  }
-
-  .banner h1,
-  .banner p,
-  .banner h3 {
-    text-shadow: 0 0 25px #ffffff;
+    position: relative;
+    left: 10%;
   }
 }
 
-@media screen and (max-width: 560px) {
-  .banner h1 {
-    font-size: 2.3rem;
+@media screen and (max-width: 500px) {
+  .mob-text-banner {
+    display: block;
+    width: 200px;
   }
 
-  .banner p {
-    font-size: 1rem;
-    padding: 0 15px;
+  .banner-wrapper {
+    right: 30%;
   }
 
-  .banner h3 {
-    font-size: 2rem;
+  .chair-banner img {
+    height: 370px;
+    left: 5%;
+    position: relative;
+  }
+
+  .mob-text-banner {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .mob-text-banner {
+    width: 180px;
+  }
+  .banner-wrapper {
+    right: 33%;
+  }
+
+  .text-banner {
+    position: relative;
+    left: 4%;
+  }
+}
+
+@media screen and (max-width: 290px) {
+  .text-banner {
+    position: relative;
+    left: 1%;
   }
 }

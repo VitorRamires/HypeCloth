@@ -98,6 +98,7 @@
 
 .card-info .price {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: start;
   gap: 15px;

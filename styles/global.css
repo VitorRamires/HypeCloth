@@ -70,5 +70,18 @@ li {
   font-size: 1.5rem;
   color: #ffffff;
   background-color: #005cff;
-  padding: 45px 5px;
+  padding: 45px;
+}
+
+@media screen and (max-width: 740px) {
+  .CTA {
+    background-image: url(../assets/images/banner-cta-mobile.jpg);
+    background-position: bottom;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .cta-message {
+    font-size: 1.3rem;
+  }
 }
