@@ -36,11 +36,16 @@ input {
   outline: none;
 }
 
+ul li:hover {
+  color: #005cff;
+}
+
 li {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 9px;
+  cursor: pointer;
 }
 
 .center {

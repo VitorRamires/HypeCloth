@@ -29,28 +29,27 @@ const swiper = new Swiper(".swiper", {
   },
 });
 
-const swiperEl = document.querySelector("swiper-wrapper");
-
-/* ============================================================================================= */
-
 const allCategoriesLink = document.querySelector(".all-categories-link");
 const submenuCategories = document.querySelector(".all-categories");
 const departmentLink = document.querySelector(".department");
 const departmentCategories = document.querySelector(".department-categories");
-
 const hamburguerMenu = document.querySelector(".hamburguer-box");
 const navMenuMobile = document.querySelector(".nav-menu-mobile");
-
 const searchingFor = document.querySelector(".searching-for");
 const searchBtn = document.querySelector(".search-btn");
 const searchInput = document.querySelector(".search input");
 
-function hoverHandler(element, target) {
-  element.addEventListener("mouseenter", () => {
+hamburguerMenu.addEventListener("click", () => {
+  navMenuMobile.classList.toggle("active-menu");
+  hamburguerMenu.classList.toggle("active-menu");
+});
+
+function setupHoverBehavior(trigger, target) {
+  trigger.addEventListener("mouseenter", () => {
     target.classList.add("show-menu");
   });
 
-  element.addEventListener("mouseleave", () => {
+  trigger.addEventListener("mouseleave", () => {
     setTimeout(() => {
       if (!target.matches(":hover")) {
         target.classList.remove("show-menu");
@@ -67,16 +66,18 @@ function hoverHandler(element, target) {
   });
 }
 
-hoverHandler(allCategoriesLink, submenuCategories);
-hoverHandler(departmentLink, departmentCategories);
-
 function handleSearch() {
   if (!searchInput.value) {
     alert("Insira seu item de pesquisa na busca");
     searchingFor.innerText = "";
+    searchingFor.style.display = "none";
     return;
   }
-  searchingFor.innerText = `Pesquisando por:  ${searchInput.value}`;
+  searchingFor.innerText = `Pesquisando por: ${searchInput.value}`;
+  searchingFor.style.display = "block";
 }
 
 searchBtn.addEventListener("click", handleSearch);
+
+setupHoverBehavior(allCategoriesLink, submenuCategories);
+setupHoverBehavior(departmentLink, departmentCategories);

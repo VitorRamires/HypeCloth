@@ -13,6 +13,17 @@ header span:not(.nav-menu ul span) {
   border-radius: 3px;
 }
 
+.searching-for {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translateY(100%);
+  background-color: #005cff;
+  padding: 20px;
+  display: none;
+  color: #ffffff;
+}
+
 .header-message {
   background-color: #005cff;
   color: #ffffff;
@@ -67,7 +78,7 @@ header span:not(.nav-menu ul span) {
   height: 100%;
 }
 
-.search-btn{
+.search-btn {
   width: 25px;
   height: 25px;
 }
@@ -114,11 +125,6 @@ header span:not(.nav-menu ul span) {
 .department {
   cursor: pointer;
   transition: 0.2s;
-}
-
-.all-categories-link:hover,
-.department:hover {
-  color: #005cff;
 }
 
 .show-menu.all-categories {
@@ -365,6 +371,11 @@ ul .all-categories-link:hover .all-categories {
     transition: 0.2s;
   }
 
+  .nav-menu-mobile ul li {
+    display: block;
+    margin: 13px 0;
+  }
+
   .close,
   .active-menu.hamburguer-box .hamburguer-lines {
     display: none;
@@ -377,10 +388,6 @@ ul .all-categories-link:hover .all-categories {
 
   .active-menu.nav-menu-mobile {
     height: 300px;
-  }
-
-  .nav-menu-mobile p {
-    margin: 13px 0;
   }
 
   .all-categories .categories-aside,
@@ -414,7 +421,7 @@ ul .all-categories-link:hover .all-categories {
   }
 
   .logo {
-    width: 150px;
+    width: 120px;
   }
 
   .header-mobile .cart,
