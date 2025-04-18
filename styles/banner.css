@@ -75,6 +75,12 @@
   }
 }
 
+@media screen and (max-width: 750px) {
+  .banner {
+    margin-top: 185px;
+  }
+}
+
 @media screen and (max-width: 650px) {
   .mob-text-banner {
     display: block;

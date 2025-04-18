@@ -30,25 +30,53 @@ const swiper = new Swiper(".swiper", {
 });
 
 const swiperEl = document.querySelector("swiper-wrapper");
+
+/* ============================================================================================= */
+
 const allCategoriesLink = document.querySelector(".all-categories-link");
 const submenuCategories = document.querySelector(".all-categories");
 const departmentLink = document.querySelector(".department");
 const departmentCategories = document.querySelector(".department-categories");
 
-allCategoriesLink.addEventListener("mouseover", () => {
-  submenuCategories.classList.add("show-menu");
-  departmentCategories.classList.remove("show-menu");
-});
+const hamburguerMenu = document.querySelector(".hamburguer-box");
+const navMenuMobile = document.querySelector(".nav-menu-mobile");
 
-submenuCategories.addEventListener("mouseleave", () => {
-  submenuCategories.classList.remove("show-menu");
-});
+const searchingFor = document.querySelector(".searching-for");
+const searchBtn = document.querySelector(".search-btn");
+const searchInput = document.querySelector(".search input");
 
-departmentLink.addEventListener("mouseover", () => {
-  departmentCategories.classList.add("show-menu");
-  submenuCategories.classList.remove("show-menu");
-});
+function hoverHandler(element, target) {
+  element.addEventListener("mouseenter", () => {
+    target.classList.add("show-menu");
+  });
 
-departmentCategories.addEventListener("mouseleave", () => {
-  departmentCategories.classList.remove("show-menu");
-});
+  element.addEventListener("mouseleave", () => {
+    setTimeout(() => {
+      if (!target.matches(":hover")) {
+        target.classList.remove("show-menu");
+      }
+    }, 100);
+  });
+
+  target.addEventListener("mouseenter", () => {
+    target.classList.add("show-menu");
+  });
+
+  target.addEventListener("mouseleave", () => {
+    target.classList.remove("show-menu");
+  });
+}
+
+hoverHandler(allCategoriesLink, submenuCategories);
+hoverHandler(departmentLink, departmentCategories);
+
+function handleSearch() {
+  if (!searchInput.value) {
+    alert("Insira seu item de pesquisa na busca");
+    searchingFor.innerText = "";
+    return;
+  }
+  searchingFor.innerText = `Pesquisando por:  ${searchInput.value}`;
+}
+
+searchBtn.addEventListener("click", handleSearch);
