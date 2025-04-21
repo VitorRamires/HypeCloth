@@ -36,6 +36,12 @@ input {
   outline: none;
 }
 
+input::placeholder{
+  color: #000000;
+  font-family: "Nunito-sans";
+  font-weight:500;
+}
+
 ul li:hover {
   color: #005cff;
 }
@@ -83,6 +89,7 @@ button[type="submit"]:hover {
   background-color: #004dd1;
   cursor: pointer;
 }
+
 
 @media screen and (max-width: 740px) {
   .CTA {

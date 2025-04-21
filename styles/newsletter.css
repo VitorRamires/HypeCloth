@@ -49,6 +49,10 @@
   height: 15px;
 }
 
+.form-newsletter form input::placeholder {
+  color: #303030;
+}
+
 .check-uptdates {
   display: flex;
   align-items: center;
