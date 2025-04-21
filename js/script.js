@@ -91,20 +91,30 @@ function updateLinksBehavior() {
     const allInformation = link.querySelectorAll("h5");
 
     if (matchWidthSize.matches) {
-      link.addEventListener("click", () => {
+      allInformation.forEach((info) => (info.style.opacity = 0));
+
+      const toggleAccordion = () => {
         link.classList.toggle("show-link-info");
         const displayStyle = link.classList.contains("show-link-info") ? 1 : 0;
         const heightLink = link.classList.contains("show-link-info") ? 235 : 75;
         allInformation.forEach((info) => (info.style.opacity = displayStyle));
         link.style.height = heightLink + "px";
-      });
+      };
+
+      link.addEventListener("click", toggleAccordion);
+      link._toggleAccordion = toggleAccordion;
     } else {
       link.classList.remove("show-link-info");
+      link.style.height = "";
       allInformation.forEach((info) => (info.style.opacity = 1));
+
+      if (link._toggleAccordion) {
+        link.removeEventListener("click", link._toggleAccordion);
+        delete link._toggleAccordion;
+      }
     }
   });
 }
 
-// Initial setup and listener for screen size changes
 updateLinksBehavior();
-matchWidthSize.addEventListener("resize", updateLinksBehavior);
+matchWidthSize.addEventListener("change", updateLinksBehavior);
