@@ -58,6 +58,10 @@ footer {
   font-weight: 400;
 }
 
+.links h5 a:hover {
+  color: #005cff;
+}
+
 .links h5 span {
   font-weight: bold;
 }
@@ -110,15 +114,73 @@ footer {
   width: 40px;
 }
 
-@media screen and (max-width: 666px) {
+.arrow-link {
+  display: none;
+}
+
+@media screen and (max-width: 750px) {
   .wrapper-fast-links {
-    text-align: center;
-    grid-template-columns: 1fr;
-    width: 100%;
-    gap: 40px;
+    display: block;
   }
 
   .social {
     justify-content: center;
+  }
+
+  .wrapper-fast-links .links h5 {
+    opacity: 0;
+    transition: 0.3s;
+  }
+
+  .links {
+    text-align: start;
+    border-top: 3px solid #dddddd;
+    padding: 25px;
+    cursor: pointer;
+    height: 75px;
+    overflow: hidden;
+    transition: 0.3s;
+  }
+
+  .links h4 {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  .links:last-child {
+    border-bottom: 3px solid #dddddd;
+  }
+
+  .arrow-link {
+    display: block;
+    width: 15px;
+    transform: rotate(0);
+    transition: 0.3s;
+  }
+
+  .show-link-info .arrow-link {
+    transform: rotate(180deg);
+  }
+
+  .fast-links .center {
+    padding: 0;
+  }
+
+  .avanti-logo-footer {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .social {
+    margin-top: 35px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .links h5 {
+    font-size: 0.85rem;
   }
 }

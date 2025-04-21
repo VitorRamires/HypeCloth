@@ -71,6 +71,7 @@ header span:not(.nav-menu ul span) {
   border: 1px solid #dbdbdb;
   border-radius: 12px;
   padding: 0 10px;
+  transition: .3s;
 }
 
 .search input {
@@ -81,6 +82,10 @@ header span:not(.nav-menu ul span) {
 .search-btn {
   width: 25px;
   height: 25px;
+}
+
+.search:focus-within {
+  border-color: #005cff;
 }
 
 .login {
