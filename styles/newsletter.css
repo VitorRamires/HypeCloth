@@ -12,7 +12,7 @@
 }
 
 .newsletter span {
-  color: #005cff;
+  color: #27548a;
 }
 
 .form-newsletter {
@@ -68,7 +68,7 @@
 .form-newsletter form button {
   width: 130px;
   max-width: 100%;
-  background-color: #005cff;
+  background-color: #27548a;
   padding: 18px 5px;
   border: none;
   border-radius: 8px;

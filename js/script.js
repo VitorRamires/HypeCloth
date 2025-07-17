@@ -32,7 +32,6 @@ const swiper = new Swiper(".swiper", {
 const allCategoriesLink = document.querySelector(".all-categories-link");
 const submenuCategories = document.querySelector(".all-categories");
 const departmentLink = document.querySelector(".department");
-const departmentCategories = document.querySelector(".department-categories");
 const hamburguerMenu = document.querySelector(".hamburguer-box");
 const navMenuMobile = document.querySelector(".nav-menu-mobile");
 const searchingFor = document.querySelector(".searching-for");
@@ -67,8 +66,7 @@ function setupHoverBehavior(trigger, target) {
   });
 }
 
-setupHoverBehavior(allCategoriesLink, submenuCategories);
-setupHoverBehavior(departmentLink, departmentCategories);
+
 
 function handleSearch() {
   if (!searchInput.value) {

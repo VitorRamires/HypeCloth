@@ -36,21 +36,17 @@ input {
   outline: none;
 }
 
-input::placeholder{
+input::placeholder {
   color: #000000;
   font-family: "Nunito-sans";
-  font-weight:500;
+  font-weight: 500;
 }
 
 ul li:hover {
-  color: #005cff;
+  color: #dda853;
 }
 
 li {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 9px;
   cursor: pointer;
 }
 
@@ -80,16 +76,15 @@ li {
   text-align: center;
   font-size: 1.5rem;
   color: #ffffff;
-  background-color: #005cff;
+  background-color: #27548a;
   padding: 45px;
 }
 
 .btn-buy:hover,
 button[type="submit"]:hover {
-  background-color: #004dd1;
+  background-color: #dda853;
   cursor: pointer;
 }
-
 
 @media screen and (max-width: 740px) {
   .CTA {
